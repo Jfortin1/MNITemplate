@@ -4,5 +4,5 @@ Title: MNI152 template
 Description: MNI152 Template.
 Author: Jean-Philippe Fortin, John Muschelli, Russell Shinohara
 Maintainer: Jean-Philippe Fortin <jeanphi@mail.med.upenn.edu>
-Depends: methods, oro.nifti, fslr
+Depends: methods, oro.nifti
 License: GPL-2
