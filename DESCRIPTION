@@ -1,0 +1,8 @@
+Package: MNITemplate
+Version: 0.99.0
+Title: MNI152 template 
+Description: MNI152 Template.
+Author: Jean-Philippe Fortin, John Muschelli, Russell Shinohara
+Maintainer: Jean-Philippe Fortin <jeanphi@mail.med.upenn.edu>
+Depends: methods, oro.nifti, fslr
+License: GPL-2
