@@ -34,12 +34,12 @@ The MNI152 template.
 
 | File      | Description     | Reader | 
 | -------------  | -------------  | -------------  |
-| MNI152_TI_1mm.nii.gz    | T1-w MNI Template, 1mm |  `readMNITemplate("T1")`| 
-| MNI152_TI_1mm_Brain.nii.gz | T1-w MNI Template, 1mm, skull stripped  |  `readMNITemplate("Brain")`| 
-| MNI152_TI_1mm_Brain_Mask.nii.gz | T1-w MNI Template, 1mm, brain mask  |  `readMNITemplate("Brain_Mask")`| 
-| MNI152_TI_2mm.nii.gz    | T1-w MNI Template, 2mm |  `readMNITemplate("T1", res="2mm")`| 
-| MNI152_TI_2mm_Brain.nii.gz | T1-w MNI Template, 2mm, skull stripped  |  `readMNITemplate("Brain", res="2mm")`| 
-| MNI152_TI_2mm_Brain_Mask.nii.gz | T1-w MNI Template, 2mm, brain mask  |  `readMNITemplate("Brain_Mask", res="2mm")`| 
+| MNI152_TI_1mm.nii.gz    | T1-w MNI Template, 1mm |  `readMNI("T1")`| 
+| MNI152_TI_1mm_Brain.nii.gz | T1-w MNI Template, 1mm, skull stripped  |  `readMNI("Brain")`| 
+| MNI152_TI_1mm_Brain_Mask.nii.gz | T1-w MNI Template, 1mm, brain mask  |  `readMNI("Brain_Mask")`| 
+| MNI152_TI_2mm.nii.gz    | T1-w MNI Template, 2mm |  `readMNI("T1", res="2mm")`| 
+| MNI152_TI_2mm_Brain.nii.gz | T1-w MNI Template, 2mm, skull stripped  |  `readMNI("Brain", res="2mm")`| 
+| MNI152_TI_2mm_Brain_Mask.nii.gz | T1-w MNI Template, 2mm, brain mask  |  `readMNI("Brain_Mask", res="2mm")`| 
 |**Tissue Segmentation:**  | | |
 | MNI152_TI_1mm_Brain_FAST_seg.nii.gz    | FSL FAST tissue classes (1=CSF, 2=GM, 3=WM) for 1mm res |  `readMNISeg()`| 
 | MNI152_TI_2mm_Brain_FAST_seg.nii.gz    | FSL FAST tissue classes (1=CSF, 2=GM, 3=WM) for 2mm res |  `readMNISeg(res="2mm")`| 
