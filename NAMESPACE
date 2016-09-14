@@ -1,7 +1,7 @@
 import(methods)
 import(oro.nifti)
 
-export(getMNITemplatePath)
-export(readMNITemplate)
+export(getMNIPath)
+export(readMNI)
 export(getMNISegPath)
 export(readMNISeg)

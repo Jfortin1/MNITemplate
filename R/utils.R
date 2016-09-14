@@ -1,4 +1,4 @@
-getMNITemplatePath <- function(what=c("T1", "Brain", "Brain_Mask"), res=c("1mm", "2mm")){
+getMNIPath <- function(what=c("T1", "Brain", "Brain_Mask"), res=c("1mm", "2mm")){
     what <- match.arg(what)
     res  <- match.arg(res)
     if (what=="T1"){
@@ -12,10 +12,10 @@ getMNITemplatePath <- function(what=c("T1", "Brain", "Brain_Mask"), res=c("1mm",
 }
 
 
-readMNITemplate  <- function(what=c("T1", "Brain", "Brain_Mask"), res=c("1mm", "2mm"), reorient=FALSE){
+readMNI  <- function(what=c("T1", "Brain", "Brain_Mask"), res=c("1mm", "2mm"), reorient=FALSE){
     what <- match.arg(what)
     res  <- match.arg(res)
-    readNIfTI(getMNITemplatePath(what=what, res=res), reorient=reorient)
+    readNIfTI(getMNIPath(what=what, res=res), reorient=reorient)
 }
 
 
