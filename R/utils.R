@@ -56,7 +56,7 @@ readMNI  <- function(..., reorient=FALSE){
 #' @export
 #'
 #' @examples
-#' getMNIPath()
+#' getMNISegPath()
 getMNISegPath <- function(alg="FAST", res=c("1mm", "2mm")){
   alg = match.arg(alg)
   if (alg != "FAST") {
