@@ -5,18 +5,18 @@ dir <- file.path(fsl_data_dir(), "standard")
 head <- readNIfTI(file.path(dir, "MNI152_T1_1mm.nii.gz"), reorient=FALSE)
 mask <- readNIfTI(file.path(dir, "MNI152_T1_1mm_first_brain_mask.nii.gz"), reorient=FALSE)
 brain <- head * mask
-writeNIfTI(head, "../data/MNI152_T1_1mm")
-writeNIfTI(mask, "../data/MNI152_T1_1mm_Brain_Mask")
-writeNIfTI(brain, "../data/MNI152_T1_1mm_Brain")
+writeNIfTI(head, "extdata/MNI152_T1_1mm")
+writeNIfTI(mask, "extdata/MNI152_T1_1mm_Brain_Mask")
+writeNIfTI(brain, "extdata/MNI152_T1_1mm_Brain")
 
 ### Let's create our MNI152 template with ventricles on for mm2:
 dir   <- file.path(fsl_data_dir(), "standard")
 head  <- readNIfTI(file.path(dir, "MNI152_T1_2mm.nii.gz"), reorient=FALSE)
 mask  <- readNIfTI(file.path(dir, "MNI152_T1_2mm_brain_mask_dil1.nii.gz"), reorient=FALSE)
 brain <- head * mask
-writeNIfTI(head, "../data/MNI152_T1_2mm")
-writeNIfTI(mask, "../data/MNI152_T1_2mm_Brain_Mask")
-writeNIfTI(brain, "../data/MNI152_T1_2mm_Brain")
+writeNIfTI(head, "extdata/MNI152_T1_2mm")
+writeNIfTI(mask, "extdata/MNI152_T1_2mm_Brain_Mask")
+writeNIfTI(brain, "extdata/MNI152_T1_2mm_Brain")
 
 
 
