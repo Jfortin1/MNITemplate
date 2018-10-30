@@ -4,7 +4,8 @@
 \alias{getMNIPath}
 \title{Get MNI Path of File}
 \usage{
-getMNIPath(what = c("T1", "Brain", "Brain_Mask"), res = c("1mm", "2mm"))
+getMNIPath(what = c("T1", "Brain", "Brain_Mask"), res = c("1mm",
+  "2mm"))
 }
 \arguments{
 \item{what}{Type of image to return}
@@ -20,4 +21,3 @@ Returns the path of a MNI file to the user.
 \examples{
 getMNIPath()
 }
-
