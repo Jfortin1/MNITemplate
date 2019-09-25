@@ -17,6 +17,7 @@ Authors@R:
            role = c("aut"),
            email = "muschellij2@gmail.com",
            comment = c(ORCID = "0000-0001-6469-1750"))
+    )
 Imports:
     oro.nifti
 License: GPL-2
