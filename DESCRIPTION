@@ -1,5 +1,5 @@
 Package: MNITemplate
-Version: 0.99.7
+Version: 1.0.0
 Title: MNI MRI Template
 Description: Provides the MNI Template of T1-weighted MRI imaging 
     from <http://www.bic.mni.mcgill.ca/ServicesAtlases/ICBM152NLin2009>.  In
@@ -16,11 +16,7 @@ Authors@R:
            family = "Muschelli",
            role = c("aut"),
            email = "muschellij2@gmail.com",
-           comment = c(ORCID = "0000-0001-6469-1750")),
-    person(given= "R. Taki",
-    family = "Shinohara",
-    role = "aut",
-    email = NA)
+           comment = c(ORCID = "0000-0001-6469-1750"))
     )
 Imports:
     oro.nifti
