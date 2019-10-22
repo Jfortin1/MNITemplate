@@ -1,5 +1,5 @@
 Package: MNITemplate
-Version: 0.99.6
+Version: 0.99.7
 Title: MNI MRI Template
 Description: Provides the MNI Template of T1-weighted MRI imaging 
     from <http://www.bic.mni.mcgill.ca/ServicesAtlases/ICBM152NLin2009>.  In
