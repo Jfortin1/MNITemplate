@@ -19,8 +19,8 @@ gray matter, white matter, and cerebrospinal fluid (’CSF’) using the
 
 **Creator**: Jean-Philippe Fortin, <jeanphi@mail.med.upenn.edu>
 
-**Authors**: Jean-Philippe Fortin, John Muschelli, Russell T.
-Shinohara
+**Authors and Maintainers**: Jean-Philippe Fortin, John Muschelli
+
 
 ##### Software status
 
