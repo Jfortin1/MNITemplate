@@ -18,6 +18,5 @@ Character filename of path
 Returns the path of a MNI file of a segmentation to the user.
 }
 \examples{
-getMNIPath()
+getMNISegPath()
 }
-

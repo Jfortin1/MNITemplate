@@ -22,4 +22,3 @@ then reads the NIfTI image into R
 \examples{
 readMNI(what = "Brain_Mask", res = "2mm")
 }
-

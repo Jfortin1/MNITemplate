@@ -1,11 +1,27 @@
 Package: MNITemplate
-Version: 0.99.7
-Title: MNI152 template
-Description: MNI152 Template.
-Author: Jean-Philippe Fortin, John Muschelli, Russell Shinohara
-Maintainer: Jean-Philippe Fortin <fortin946@gmail.com>
-Depends:
+Version: 1.0.1
+Title: MNI MRI Template
+Description: Provides the MNI Template of T1-weighted MRI imaging 
+    from <http://www.bic.mni.mcgill.ca/ServicesAtlases/ICBM152NLin2009>.  In
+    addition to the standard template, the image has been segmented into 
+    gray matter, white matter, and cerebrospinal fluid ('CSF') using the 'FAST'
+    algorithm from 'FSL' <https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/FAST>.
+Authors@R: 
+    c(
+    person(given= "Jean-Philippe",
+    family = "Fortin",
+    role = c("aut", "cre"),
+    email = "fortin946@gmail.com"),
+    person(given = "John",
+           family = "Muschelli",
+           role = c("aut"),
+           email = "muschellij2@gmail.com",
+           comment = c(ORCID = "0000-0001-6469-1750"))
+    )
+Imports:
     oro.nifti
 License: GPL-2
-RoxygenNote: 5.0.1.9000
+RoxygenNote: 6.1.1
 BugReports: https://github.com/Jfortin1/MNITemplate/issues
+URL: https://github.com/Jfortin1/MNITemplate
+Encoding: UTF-8

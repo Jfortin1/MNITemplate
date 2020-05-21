@@ -24,4 +24,3 @@ then reads the NIfTI image of the segmetation into R
 \examples{
 readMNISeg(res = "2mm")
 }
-
