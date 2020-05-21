@@ -42,10 +42,54 @@ The MNI152 template that is included with FSL:
 
 ## 2\. Reading the data into R
 
-``` r
+We first load the package into R:
+```{r}
 library(MNITemplate)
-readMNI("T1")
 ```
+
+Once the package is loaded into R, use the command `readMNI()` to import the MNI template T1-w image as a `nifti` object into R:
+```{r}
+mni_t1 <- readMNI()
+```
+One can use the function `orthographic` from the `oro.nifti` package to visualize the template:
+```{r}
+orthographic(mni_t1)
+```
+<p align="center">
+<img src="https://github.com/Jfortin1/MNITemplate/blob/master/inst/figures/mni_t1.png" width="600"/>
+</p>
+
+In many preprocessing pipelines, the path of the template file in the system must be specified. For this, use the following:
+```{r}
+mni_path <- getMNIPath()
+```
+and to get brain mask:
+```{r}
+mni_brain_mask_path <- getMNIPath("Brain_Mask")
+```
+
+<div id='id-section3'/>
+
+## 3. Segmentation
+
+We performed a 3-tissue class segmentation of the T1w MNI template using the FSL FAST segmentation algorithm via the `fslr` package. The script that was used to perform the segmentation can be found [here](https://github.com/Jfortin1/MNITemplate/blob/master/inst/segmentation.R). The segmentation labels are 0 for Background (outside of the brain), 1 for cerebrospinal fluid (CSF), 2 for grey matter (GM) and 3 for white matter (WM). Let's read the segmentation classes into R:
+```{r}
+seg <- readMNISeg()
+orthographic(seg)
+```
+<p align="center">
+<img src="https://github.com/Jfortin1/MNITemplate/blob/master/inst/figures/mni_seg.png" width="600"/>
+</p>
+
+If one wishes to create a WM mask, could do the following:
+```{r}
+wm_mask <- seg
+wm_mask[wm_mask!=3] <- 0
+```
+and similarly for the other tissues. 
+
+<div id='id-section4'/>
+
 
 ## 3\. Files
 
