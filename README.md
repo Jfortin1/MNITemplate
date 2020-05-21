@@ -15,6 +15,8 @@ gray matter, white matter, and cerebrospinal fluid (’CSF’) using the
 ‘FAST’ algorithm from ‘FSL’
 <https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/FAST>..
 
+For a template with a full white-matter parcellation map, see our [EveTemplate package](https://github.com/Jfortin1/EveTemplate).
+
 -----
 
 **Creator**: Jean-Philippe Fortin, <fortin946@gmail.com>
